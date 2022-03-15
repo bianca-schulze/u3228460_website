@@ -1,0 +1,136 @@
+/*main elements*/
+
+
+
+body {
+    font-family: 'Cutive Mono', monospace;
+    line-height: 1.8;
+    font-size: 17px;
+    color: darkslategrey;
+    background-color: #FFF0E7;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-size: 2.5em;
+    margin-top: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-size: 2em;
+    margin-top: 1rem;
+}
+
+.logo {
+    max-width: 250px;
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+
+/* links */
+a:visited {
+    color: black;
+    /*   check this later text-decoration-line: underline; */
+}
+
+a:hover {
+    color: skyblue;
+}
+
+a:active {
+    color: darkblue;
+}
+
+main.a {
+    color: black;
+}
+
+/* main navigation */
+.navigation-grid {
+    display: grid;
+    grid-template-columns: 2fr 6fr 2fr;
+}
+
+
+ul {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+nav li {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: inline-block;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+a.donate-button {
+    font-family: 'Cutive Mono', monospace;
+    background-color: black;
+    border-radius: 3rem;
+    font-size: 19.2px;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    position: relative;
+    top: 25px;
+    text-decoration: none;
+}
+
+
+.donate-button:link,
+.donate-button:visited {
+    color: white;
+}
+
+.donate-button:hover {
+    color: skyblue;
+    text-decoration-line: underline;
+}
+
+/* home page - image left text right*/
+.grid-img-left {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.lake-img {
+    max-width: 100%;
+    margin-left: -40px
+}
+
+.p-right {
+    align-self: center;
+    padding: 4rem;
+}
+
+/* home page - image right text left */
+.grid-img-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.scissors-img {
+    max-width: 100%;
+    margin-right: -40px;
+}
+
+.p-left {
+    align-self: center;
+    padding: 4rem;
+}
