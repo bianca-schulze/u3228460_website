@@ -245,3 +245,36 @@ footer a {
     .logo {
         max-width: 16em;
     }
+
+    body {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .grid-img-left {
+        grid-template-columns: 1fr;
+        grid-gap: 2em;
+    }
+
+    .lake-img {
+        max-width: 100%;
+        margin-left: 0px;
+
+    }
+
+    .grid-img-right {
+        grid-template-columns: 1fr;
+        grid-gap: 2em;
+    }
+
+    .scissors-img {
+        max-width: 100%;
+        margin-right: 0px;
+    }
+
+    @media (max-width: 75em) {
+
+        body {
+            max-width: 100%;
+            margin: 0 auto;
+        }
