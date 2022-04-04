@@ -28,7 +28,7 @@ h2 {
     font-family: 'Roboto', sans-serif;
     color: black;
     font-size: 2em;
-    margin-top: 3em;
+    margin-top: 1em;
 }
 
 h3 {
@@ -158,7 +158,7 @@ a.donate-button {
 .card {
     /* Add shadows to create the "card" effect */
     width: 20em;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
 }
 
@@ -177,12 +177,12 @@ img {
 
 /* On mouse-over, add a deeper shadow */
 .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.2);
 }
 
 /* Add some padding inside the card container */
 .container {
-    padding: 2px 16px;
+    padding: 0.125em 1em;
 }
 
 /* footer */
@@ -215,6 +215,45 @@ footer li {
 footer a {
     text-decoration: none;
 }
+
+.artist-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* meet the team */
+
+.team-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.round-img {
+    border-radius: 50%;
+    max-height: 15em;
+    box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.2);
+    filter: grayscale(1)
+}
+
+.round-img:hover {
+    filter: none;
+}
+
+.round-img:hover + figcaption {
+    display: block;
+    position: absolute;
+}
+
+figcaption {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    display: none;
+    text-align: center;
+}
+
+
+
 
 /* media queries */
 
@@ -277,4 +316,54 @@ footer a {
         body {
             max-width: 100%;
             margin: 0 auto;
+        }
+
+
+        /*        modal test */
+
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            padding-top: 100px;
+            /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/ opacity */
+        }
+
+        /* Modal Content */
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+
+        /* The Close Button */
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
         }
