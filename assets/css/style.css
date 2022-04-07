@@ -37,6 +37,19 @@ h3 {
     color: dimgrey;
 }
 
+#center {
+    text-align: center;
+}
+
+#right {
+    text-align: right;
+    margin-right: 8em;
+}
+
+#left {
+    margin-left: 8em;
+}
+
 h4 {
     font-weight: bold;
 }
@@ -110,6 +123,8 @@ a.donate-button {
     text-decoration-line: underline;
 }
 
+
+
 /* home page - image left text right*/
 .grid-img-left {
     margin-top: 1em;
@@ -120,7 +135,7 @@ a.donate-button {
 
 .lake-img {
     max-width: 100%;
-    margin-left: -40px
+    margin-left: -2.5em;
 }
 
 .p-right {
@@ -130,7 +145,7 @@ a.donate-button {
 
 /* home page - image right text left */
 .grid-img-right {
-    margin-top: 6em;
+    margin-top: 3em;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 2em;
@@ -138,7 +153,7 @@ a.donate-button {
 
 .scissors-img {
     max-width: 100%;
-    margin-right: -40px;
+    margin-right: -2.5em;
 }
 
 .p-left {
@@ -216,10 +231,59 @@ footer a {
     text-decoration: none;
 }
 
+/* artists */
 .artist-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1.8em;
+
 }
+
+
+.artist-grid img {
+    box-shadow: 0 0.5em 1em 0 rgb(0 0 0 / 20%);
+    max-width: 100%;
+    border-radius: 2%;
+}
+
+#selected {
+    box-shadow: 0 0.5em 1em 0 skyblue;
+}
+
+#selected-text {
+    color: skyblue;
+    text-decoration-line: underline;
+    text-underline-offset: 0.125em;
+    text-decoration-thickness: 0.07em;
+
+}
+
+
+.text-img {
+    position: relative;
+    text-align: center;
+    color: aliceblue;
+}
+
+
+
+.centered-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Roboto', sans-serif;
+    font-size: 4em;
+    color: #fff;
+    text-shadow: 5px 5px 10px black;
+}
+
+.centered-text:hover {
+    color: skyblue;
+}
+
+
+
 
 /* meet the team */
 
@@ -233,7 +297,9 @@ footer a {
     border-radius: 50%;
     max-height: 15em;
     box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.2);
-    filter: grayscale(1)
+    filter: grayscale(1);
+    cursor: pointer;
+
 }
 
 .round-img:hover {
@@ -252,6 +318,181 @@ figcaption {
     text-align: center;
 }
 
+#neil-text {
+    display: none;
+}
+
+#karina-text {
+    display: none;
+}
+
+#hesson-text {
+    display: none;
+}
+
+/*  gallery */
+* {
+    box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+    position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+.mySlides#main-slide {
+    display: block;
+}
+
+.mySlides img {
+    max-width: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 1em;
+    margin-top: -3.125em;
+    margin-right: 0.85em;
+    color: white;
+    font-weight: bold;
+    font-size: 1.25em;
+    border-radius: 0 0.1875em 0.1875em 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 0.1875em 0 0 0.1875em;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 0.75em;
+    padding: 0.5em 0.75em;
+    position: absolute;
+    top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    margin-top: -0.8em;
+    padding: 0.5em;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Six columns side by side */
+.column {
+    float: left;
+    width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+/* contact us form */
+
+input {
+    margin-top: 0.8em;
+}
+
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.9em;
+    border: 1px solid #ccc;
+    border-radius: 0.25em;
+    box-sizing: border-box;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    resize: vertical;
+    font-family: verdana;
+}
+
+input[type="submit"] {
+    font-family: 'Cutive Mono', monospace;
+    background-color: black;
+    border-radius: 2em;
+    font-size: 1.1em;
+    color: white;
+    padding: 0.5em 1.5em;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+}
+
+input[type="submit"]:hover {
+    background-color: skyblue;
+    cursor: pointer;
+}
+
+.contact input[type="submit"],
+.feedback input[type="submit"] {
+    float: right;
+    margin-bottom: 1em;
+    position: relative;
+}
+
+
+.container-form {
+    padding: 20px;
+    width: 75%;
+    margin-bottom: 30px;
+
+}
+
+label {
+    font-family: 'Roboto';
+}
+
+#message {
+    height: 12.5em;
+}
+
+select#amounts {
+    max-width: 6em;
+}
+
+/*modal */
 
 
 
@@ -297,7 +538,7 @@ figcaption {
 
     .lake-img {
         max-width: 100%;
-        margin-left: 0px;
+        margin-left: 0em;
 
     }
 
@@ -308,7 +549,7 @@ figcaption {
 
     .scissors-img {
         max-width: 100%;
-        margin-right: 0px;
+        margin-right: 0em;
     }
 
     @media (max-width: 75em) {
@@ -316,54 +557,4 @@ figcaption {
         body {
             max-width: 100%;
             margin: 0 auto;
-        }
-
-
-        /*        modal test */
-
-        .modal {
-            display: none;
-            /* Hidden by default */
-            position: fixed;
-            /* Stay in place */
-            z-index: 1;
-            /* Sit on top */
-            padding-top: 100px;
-            /* Location of the box */
-            left: 0;
-            top: 0;
-            width: 100%;
-            /* Full width */
-            height: 100%;
-            /* Full height */
-            overflow: auto;
-            /* Enable scroll if needed */
-            background-color: rgb(0, 0, 0);
-            /* Fallback color */
-            background-color: rgba(0, 0, 0, 0.4);
-            /* Black w/ opacity */
-        }
-
-        /* Modal Content */
-        .modal-content {
-            background-color: #fefefe;
-            margin: auto;
-            padding: 20px;
-            border: 1px solid #888;
-            width: 80%;
-        }
-
-        /* The Close Button */
-        .close {
-            color: #aaaaaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-        }
-
-        .close:hover,
-        .close:focus {
-            color: #000;
-            text-decoration: none;
-            cursor: pointer;
         }

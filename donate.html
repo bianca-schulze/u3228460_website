@@ -3,9 +3,9 @@
 <html lang="en">
 
 <head>
-    <title>Contour556</title>
-    <meta charset="utf-8">
     <title>Canberra Art Biennial</title>
+    <meta charset="utf-8">
+
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Roboto:wght@700&display=swap" rel="stylesheet">
-
+    <script type="text/javascript" src="js/javascript.js"></script>
 </head>
 <a name="top"></a>
 
@@ -31,9 +31,9 @@
                 <!-- main nav-->
                 <nav>
                     <ul>
-                        <li><a href="index.html">FESTIVALS</a></li>
+                        <li><a href="festivals-2022.html">FESTIVALS</a></li>
                         <li><a href="about.html">ABOUT</a></li>
-                        <li><a href="about.html">CONTACT</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
                         <li><a class="donate-button" href="donate.html"> DONATE</a> </li>
                     </ul>
                 </nav>
@@ -41,12 +41,85 @@
         </header>
         <main>
 
-            <h1>Festivals</h1>
+            <h1>Donate</h1>
+            <p>Your donation helps keep canberra art biennial a free event for all to enjoy. Donations support artists directly, donations are directed towards artists fees, accommodation and travel. Donations can be directed towards specific support for particular artists and their project.
+                <br><br>
+                Your donations will directly support artists, ensuring their participation in this significant international event.
+            </p>
+            <h2>Donation Form</h2>
+            <div class="container-form">
+
+                <label for="amount">Choose an amount:</label>
+                <select id="amounts" name="amounts">
+                    <option value="$0">$0</option>
+                    <option value="$25">$25</option>
+                    <option value="$50">$50</option>
+                    <option value="$100">$100</option>
+                    <option value="$150">$150</option>
+                    <option value="$300">$300</option>
+                    <option value="$500">$500</option>
+                </select>
+                <p>For amounts higher than $500, please <a href="contact.html">contact us.</a> </p> <br>
+                <form class="contact" action="contact-us.html">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Enter your first name..." />
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Enter your last name..." />
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="Enter your email..." />
+
+                    <label for="amount">Would you like to remain anonymous?</label>
+                    <select id="amounts" name="amounts">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                    <br>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Write your message here...">
+</textarea>
+
+                    <h2>Payment</h2>
+                    <label for="cname">Name on Card</label>
+                    <input type="text" id="cname" name="cardname" placeholder="John Smith">
+                    <label for="ccnum">Card number</label>
+                    <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+
+                    <div class="row">
+                        <div class="col-50">
+                            <label for="expyear">Expiry</label>
+                            <input type="text" id="expyear" name="expyear" placeholder="MM/YYYY">
+                        </div>
+                        <div class="col-50">
+                            <label for="cvv">CVV</label>
+                            <input type="text" id="cvv" name="cvv" placeholder="123">
+                        </div>
+                    </div>
+                    <input type="submit" value="Submit" />
+                    <div class="spacer"></div>
+                </form>
+
+            </div>
+
 
         </main>
         <footer>
+            <div class="socials">
+                <a href="https://www.instagram.com/contour556/?hl=en" class="footer-icon" target="_blank">
+                    <img src="assets/images/instagram-icon.png" alt="Link to instagram" /> </a>
+
+                <a href="https://www.facebook.com/contour556/" class="footer-icon" target="_blank">
+                    <img src="assets/images/facebook-icon.png" alt="Link to instagram" /> </a>
+
+                <a href="https://www.youtube.com/channel/UCCNO9UuccHEmA578lnEaRTg" class="footer-icon" target="_blank">
+                    <img src="assets/images/youtube-icon.png" alt="Link to instagram" /> </a>
+            </div>
+
+            <ul class="footer">
+                <li><a href="#top">Back to top</a></li>
+            </ul>
 
         </footer>
+
     </div>
 </body>
 
