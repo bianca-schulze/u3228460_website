@@ -1,33 +1,3 @@
-// about the team
-
-function neil() {
-    var x = document.getElementById("neil-text");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
-
-function karina() {
-    var x = document.getElementById("karina-text");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
-
-function hesson() {
-    var x = document.getElementById("hesson-text");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
-
-
 //gallery
 let slideIndex = 1;
 showSlides(slideIndex);
