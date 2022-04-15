@@ -145,17 +145,9 @@ a.donate-button {
 
 .p-right {
     align-self: center;
-    padding: 2em;
 }
 
 /* home page - image right text left */
-.grid-img-right {
-    margin-top: 3em;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 2em;
-}
-
 .scissors-img {
     max-width: 100%;
     margin-right: -2.5em;
@@ -163,7 +155,6 @@ a.donate-button {
 
 .p-left {
     align-self: center;
-    padding: 2em;
 }
 
 /* card deck */
@@ -510,6 +501,15 @@ iframe {
 
 /* media queries */
 
+/* for 1200px */
+@media (max-width: 75em) {
+
+    body {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
+
 /* for 1024px */
 @media (max-width: 64em) {
 
@@ -520,7 +520,7 @@ iframe {
     }
 
     nav li {
-        font-size: 1em;
+        font-size: 0.7em;
         padding-top: 0.6em;
         padding-bottom: 0.6em;
         padding-left: 1.1em;
@@ -546,7 +546,6 @@ iframe {
     .grid-img-left {
         grid-template-columns: 1fr;
         grid-gap: 2em;
-        grid-row: 1;
     }
 
     .lake-img {
@@ -581,10 +580,4 @@ iframe {
             display: grid;
             grid-template-columns: 1fr 1fr;
         }
-
-        @media (max-width: 75em) {
-
-            body {
-                max-width: 100%;
-                margin: 0 auto;
-            }
+    }
