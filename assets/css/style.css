@@ -38,6 +38,7 @@ h2 {
 
 h3 {
     font-family: 'Roboto', sans-serif;
+    font-weight: 400;
     font-size: 1em;
     color: dimgrey;
 }
@@ -78,6 +79,10 @@ a:visited {
 }
 
 a:hover {
+    color: skyblue;
+}
+
+li a:hover {
     color: white;
 }
 
@@ -122,7 +127,7 @@ a.donate-button {
     border-radius: 3em;
     font-size: 1em;
     color: white;
-    padding: 1em 2em;
+    padding: 0.5em 1em;
     text-align: center;
     position: relative;
     text-decoration: none;
@@ -301,7 +306,8 @@ footer a {
 .team-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-
+    grid-gap: 2em;
+    text-align: justify;
 }
 
 .round-img {
@@ -309,37 +315,18 @@ footer a {
     max-height: 15em;
     box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.2);
     filter: grayscale(1);
-    cursor: pointer;
-
 }
 
 .round-img:hover {
     filter: none;
 }
 
-.round-img:hover + figcaption {
-    display: block;
-    position: absolute;
+.right-align {
+    position: relative;
+    float: right;
+    margin-right: 4em;
 }
 
-figcaption {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.2em;
-    display: none;
-    text-align: center;
-}
-
-#neil-text {
-    display: none;
-}
-
-#karina-text {
-    display: none;
-}
-
-#hesson-text {
-    display: none;
-}
 
 /*  gallery */
 * {
@@ -577,6 +564,19 @@ iframe {
 
     .grid-card {
         grid-template-columns: 1fr 1fr;
+    }
+
+    .team-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /*  for 786px  */
+    @media (max-width: 48em) {
+        .team-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
     }
 
     /* for 425px */
