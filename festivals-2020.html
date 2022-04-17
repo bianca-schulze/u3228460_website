@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Cutive+Mono&family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
     <script type="text/javascript" src="js/javascript.js"></script>
 </head>
-<a name="top"></a>
+<a id="top"></a>
 
 <body>
     <header>
@@ -91,32 +91,32 @@
                 <!-- Full-width images with number text -->
                 <div class="mySlides" id="main-slide">
                     <div class="numbertext">1 / 6</div>
-                    <img src="assets/images/20mariana-del-castillo.jpeg" style="width:100%">
+                    <img src="assets/images/20mariana-del-castillo.jpeg" alt="Mariana del Castillo art">
                 </div>
 
                 <div class="mySlides">
                     <div class="numbertext">2 / 6</div>
-                    <img src="assets/images/20fiona-hooton.jpeg" style="width:100%">
+                    <img src="assets/images/20fiona-hooton.jpeg" alt="Fiona Hooton art">
                 </div>
 
                 <div class="mySlides">
                     <div class="numbertext">3 / 6</div>
-                    <img src="assets/images/20jaqueline-bradley.jpeg" style="width:100%">
+                    <img src="assets/images/20jaqueline-bradley.jpeg" alt="Jacqueline Bradley art">
                 </div>
 
                 <div class="mySlides">
                     <div class="numbertext">4 / 6</div>
-                    <img src="assets/images/20lewer-richard.jpeg" style="width:100%">
+                    <img src="assets/images/20lewer-richard.jpeg" alt="Lewer Richard art">
                 </div>
 
                 <div class="mySlides">
                     <div class="numbertext">5 / 6</div>
-                    <img src="assets/images/20rox-de-luca.jpeg" style="width:100%">
+                    <img src="assets/images/20rox-de-luca.jpeg" alt="Rox de Luca art">
                 </div>
 
                 <div class="mySlides">
                     <div class="numbertext">6 / 6</div>
-                    <img src="assets/images/20mark-booth.jpeg" style="width:100%">
+                    <img src="assets/images/20mark-booth.jpeg" alt="Mark Booth art">
                 </div>
 
                 <!-- Next and previous buttons -->
@@ -131,29 +131,29 @@
                 <!-- Thumbnail images -->
                 <div class="row">
                     <div class="column">
-                        <img class="demo cursor" src="assets/images/20mariana-del-castillo.jpeg" style="width:100%" onclick="currentSlide(1)" alt="Mariana del Castillo">
+                        <img class="demo cursor" src="assets/images/20mariana-del-castillo.jpeg" onclick="currentSlide(1)" alt="Mariana del Castillo">
                     </div>
                     <div class="column">
-                        <img class="demo cursor" src="assets/images/20fiona-hooton.jpeg" style="width:100%" onclick="currentSlide(2)" alt="Fiona Hooton">
+                        <img class="demo cursor" src="assets/images/20fiona-hooton.jpeg" onclick="currentSlide(2)" alt="Fiona Hooton">
                     </div>
                     <div class="column">
-                        <img class="demo cursor" src="assets/images/20jaqueline-bradley.jpeg" style="width:100%" onclick="currentSlide(3)" alt="Jacqueline Bradley">
+                        <img class="demo cursor" src="assets/images/20jaqueline-bradley.jpeg" onclick="currentSlide(3)" alt="Jacqueline Bradley">
                     </div>
                     <div class="column">
-                        <img class="demo cursor" src="assets/images/20lewer-richard.jpeg" style="width:100%" onclick="currentSlide(4)" alt="Lewer Richard">
+                        <img class="demo cursor" src="assets/images/20lewer-richard.jpeg" onclick="currentSlide(4)" alt="Lewer Richard">
                     </div>
                     <div class="column">
-                        <img class="demo cursor" src="assets/images/20rox-de-luca.jpeg" style="width:100%" onclick="currentSlide(5)" alt="Rox de Luca">
+                        <img class="demo cursor" src="assets/images/20rox-de-luca.jpeg" onclick="currentSlide(5)" alt="Rox de Luca">
                     </div>
                     <div class="column">
-                        <img class="demo cursor" src="assets/images/20mark-booth.jpeg" style="width:100%" onclick="currentSlide(6)" alt="Mark Booth">
+                        <img class="demo cursor" src="assets/images/20mark-booth.jpeg" onclick="currentSlide(6)" alt="Mark Booth">
                     </div>
                 </div>
 
             </div>
 
             <h2>Highlights video</h2>
-            <iframe src="https://www.youtube.com/embed/_fYB1_lVuUM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/_fYB1_lVuUM" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
             <form action="action_page.php">
                 <div>
@@ -161,10 +161,10 @@
                 </div>
 
                 <div>
-                    <input type="text" placeholder="Name" name="name" required>
-                    <input type="text" placeholder="Email address" name="mail" required>
+                    <input type="text" placeholder="Name" id="name" required>
+                    <input type="text" placeholder="Email address" id="mail" required>
                     <label>
-                        <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+                        <input type="checkbox" checked="checked" id="subscribe"> Daily Newsletter
                     </label>
                 </div>
 
@@ -188,7 +188,7 @@
                 <img src="assets/images/youtube-icon.png" alt="Link to instagram" /> </a>
         </div>
 
-        <ul class="footer">
+        <ul class="footer-button">
             <li><a href="#top">Back to top</a></li>
         </ul>
 
