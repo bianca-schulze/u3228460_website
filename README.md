@@ -76,11 +76,8 @@ Going into this assignment, I had a basic understanding of HTML and CSS, so I de
 #### Links
 
 * Minimal, black and white colour scheme [inspired by this website.](https://nl.pinterest.com/pin/335940453445281077/)
-
 * Home page grid layout [inspired by this website.](https://nl.pinterest.com/pin/335940453435812873/)
-
 * Main navigation [inspired by this website.](https://nl.pinterest.com/pin/67835538128438844/)
-
 * Meet the team grid [inspired by this website.](https://thecorrespondent.com/correspondents)
 
 All fonts were sourced from [Google Fonts.](https://fonts.google.com/)
@@ -90,25 +87,15 @@ Social media icons were sourced [here.](https://thehungryjpeg.com/product/109876
 ### HTML and CSS code
 
 * Main navigation gradient generator found [here.](https://cssgradient.io/)
-
 * PX to EM converter found [here.](https://www.w3schools.com/tags/ref_pxtoemconversion.asp)
-
 * JavaScript validator found [here.](https://codebeautify.org/jsvalidate)
-
 * HTML validator found [here.](https://validator.w3.org/)
-
 * CSS validator found [here.](https://jigsaw.w3.org/css-validator/)
-
 * News card deck (featured on index.html lines 65-98, stylesheet lines 187-224) found [here.](https://www.w3schools.com/howto/howto_css_cards.asp)
-
 * Artists gallery (featured on about.html lines 89-151, stylesheet lines 341-430, javascript lines 1-35) found [here.](https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp)
-
 * Contact form (featured on contact.html lines 46-59 and donate.html lines 52-103, stylesheet lines 433-497) found [here.](https://www.w3schools.com/howto/howto_css_register_form.asp)
-
 * Newsletter subscription (featured on about.html, festivals-2022.html, festivals-2020.html, festivals-2018.html and festivals-2016.html) found [here.](https://www.w3schools.com/howto/howto_css_newsletter.asp)
-
 * Back to top (featured in footer) found [here.](https://www.w3schools.com/howto/howto_js_scroll_to_top.asp)
-
 * Donate button (featured in main navigation, stylesheet 124-145) found [here.](https://www.w3schools.com/tags/tag_button.asp)
 
 ### Appendices
